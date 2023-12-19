@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-   
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/questionsStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -16,13 +17,11 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="StartPage">
-            <div class="backTop"></div>
-            <div class="backBottom"></div>
+    <div id="aaa" class="container">
+        <div class="StartPage hie">
 
             <div class="content">
-                <button class="cPlusR=Btn startBtn">
+                <button class="cPlusBtn startBtn" onclick="ChangeBackground()">
                     <img src="/img/cplus.png" alt="c++" class="cPlusImg MainImg">
                     <span class="cPlusText">C++</span>
                 </button>
@@ -37,7 +36,42 @@
             </div>
 
         </div>
+
+        <div class="QuestionPage hideq">
+            <div class="contentPageQ">
+                <div class="Question">Who was the first chicken or egg?</div>
+                <button class="answer A">
+                    <div class="answerContainerA">
+                        <span class="numberA">A</span>
+                        <p class="textAnswerA"></p>
+                    </div>
+                </button>
+                <button class="answer B">
+                    <div class="answerContainerB">
+                        <span class="numberB">B</span>
+                        <p class="textAnswerB"></p>
+                    </div>
+                </button>
+                <button class="answer C">
+                    <div class="answerContainerC">
+                        <span class="numberC">C</span>
+                        <p class="textAnswerC"></p>
+                    </div>
+                </button>
+                <button class="answer D">
+                    <div class="answerContainerD">
+                        <span class="numberD">D</span>
+                        <p class="textAnswerD"></p>
+                    </div>
+                </button>
+                <button class="NextBtn">
+                        <span class="NextText">Next</span>
+                </button>
+            </div>
+
+        </div>
     </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>
