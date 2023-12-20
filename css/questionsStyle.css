@@ -25,7 +25,8 @@ body {
 
 .QuestionPage::before {
     content: '';
-    background: url(/img/c.svg) no-repeat center;
+    /* background: url(/img/c.svg) no-repeat center; */
+
     background-size: cover;
 
     position: absolute;
@@ -38,6 +39,13 @@ body {
     border-bottom-right-radius: 18px;
 }
 
+.change-background::before {
+    background: url('./img/c.svg') no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .contentPageQ {
     margin-top: 30.5vh;
     margin-bottom: 8vh;
@@ -48,10 +56,9 @@ body {
     padding-left: 48px;
     padding-right: 48px;
 }
-
-.Question {
-    padding: 20px;
-    display: flex;
+.Qtext {
+    padding-top: 3px;
+    align-items: center;
     border: none;
     border-radius: 14px;
     background: #FFF;
@@ -61,21 +68,32 @@ body {
     font-family: Poppins;
     font-size: 25px;
     font-weight: 500;
-    padding-top: 5px;
+
     margin-bottom: 34px;
     width: 316px;
     height: 138px;
 
 }
+.Question {
+    padding-top: 5px;
+    color: #5B1CAE;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 .answer {
     display: flex;
     /* transition: all 0.3s; */
+    flex-direction: row;
     align-items: center;
     color: #5B1CAE;
     text-align: center;
     font-family: Poppins;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 500;
     padding: 17px 0px 17px 0px;
     border: none;
@@ -88,7 +106,13 @@ body {
 
 .answer span {
     margin-left: 35px;
+    display: inline;
 
+
+}
+.answer p {
+    display: inline;
+    margin-left: 20px;
 }
 
 .answer.checked {
@@ -131,9 +155,7 @@ body {
     margin-bottom: 40px;
 }
 
-/* .answer button {
-    padding-left: 20px;
-} */
+
 
 .hideq {
     display: none;

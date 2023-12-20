@@ -1,0 +1,62 @@
+.FinalPage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 10vh;
+    padding-bottom: 10%;
+}
+
+.FinalPage::before {
+    content: '';
+    background: url(/img/finalBack.svg);
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+.man {
+    position: absolute;
+    bottom: 0;
+    margin-left: 15%;
+
+}
+
+.FinalPage span {
+
+}
+.Result {
+    color: #fff;
+
+    text-align: center;
+    font-family: Poppins;
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.yourScore {
+    color: #fff;
+
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.Score{
+    color: #fff;
+
+    text-align: center;
+    font-family: Poppins;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.hided {
+    display: none;
+}

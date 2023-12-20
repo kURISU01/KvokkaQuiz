@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/mainStyle.css">
     <link rel="stylesheet" href="css/questionsStyle.css">
+    <link rel="stylesheet" href="css/finalStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -18,18 +19,18 @@
 
 <body>
     <div id="aaa" class="container">
-        <div class="StartPage hie">
+        <div class="StartPage">
 
-            <div class="content">
-                <button class="cPlusBtn startBtn" onclick="ChangeBackground()">
+            <div id="menuContainer" class="content">
+                <button id="CPlus" class="cPlusBtn startBtn" onclick="handleCategoryClick(event)">
                     <img src="/img/cplus.png" alt="c++" class="cPlusImg MainImg">
                     <span class="cPlusText">C++</span>
                 </button>
-                <button class="javaBtn startBtn">
+                <button id="Java" class="javaBtn startBtn" onclick="handleCategoryClick(event)">
                     <img src="/img/java.png" alt="java" class="javaImg MainImg">
                     <span class="javaText">Java</span>
                 </button>
-                <button class="pythonBtn startBtn">
+                <button id="Python" class="pythonBtn startBtn" onclick="handleCategoryClick(event)">
                     <img src="/img/python.png" alt="python" class="pythonImg MainImg">
                     <span class="pythonText">Python</span>
                 </button>
@@ -38,8 +39,10 @@
         </div>
 
         <div class="QuestionPage hideq">
-            <div class="contentPageQ">
-                <div class="Question">Who was the first chicken or egg?</div>
+            <div id="questionContainer" class="contentPageQ">
+                <div class="Qtext">Question
+                    <div class="Question"></div>
+                </div>
                 <button class="answer A">
                     <div class="answerContainerA">
                         <span class="numberA">A</span>
@@ -68,6 +71,13 @@
                         <span class="NextText">Next</span>
                 </button>
             </div>
+
+        </div>
+        <div class="FinalPage hided">
+            <span class="Result">Congrats!</span>
+            <span class="yourScore">YOUR SCORE</span>
+            <span class="Score">10/10</span>
+            <img class="man" src="/img/completed.png"></img>
 
         </div>
     </div>

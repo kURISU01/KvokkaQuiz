@@ -2,9 +2,10 @@
     "categories": [
       {
         "name": "CPlus",
+        "backgroundImage": "./img/c.svg",
         "questions": [
           {
-            "text": "Какой тип данных используется для хранения целых чисел в C++?",
+            "text": "What data type is used to store whole numbers in C++?",
             "answers": [
               "float",
               "char", 
@@ -14,7 +15,7 @@
             "correct": 2
           },
           {
-            "text": "Каков результат операции 10 % 3 в C++?",
+            "text": "What is the result of the 10 % 3 operation in C++?",
             "answers": [
                "3",
                "1", 
@@ -24,7 +25,7 @@
             "correct": 1
           },
           {
-            "text": "Какое ключевое слово используется в C++ для определения класса?",
+            "text": "What keyword is used in C++ to define a class?",
             "answers": [
                "class",
                "object", 
@@ -34,7 +35,7 @@
             "correct": 0
           },
           {
-            "text": "Какие модификаторы доступа можно указать для класса в C++?",
+            "text": "What access modifiers can be specified for a class in C++?",
             "answers": [
                "public",
                "private", 
@@ -44,7 +45,7 @@
             "correct": [0, 1]
           },
           {
-            "text": "Как в C++ создать одномерный массив из 10 элементов?",
+            "text": "How do you create a one-dimensional array of 10 elements in C++?",
             "answers": [
                "array[10]",
                "array(10)", 
@@ -57,51 +58,113 @@
       },
       {
         "name": "Java",
+        "backgroundImage": "./img/java.svg",
         "questions": [
           {
-            "text": "Вопрос 1 по Java?",
+            "text": "Which interface is used to implement events in Java?",
             "answers": [
-               "Ответ 1",
-               "Ответ 2", 
-               "Ответ 3",
-               "Ответ 4"  
+               "observer",
+               "eventEmitter", 
+               "notifier",
+               "eventListener"  
             ],
-            "correct": 2 
+            "correct": 3
           },
           {
-            "text": "Вопрос 2 по Java?",
+            "text": "What is the size of a Char in Java?",
             "answers": [
-               "Ответ 1",
-               "Ответ 2", 
-               "Ответ 3",
-               "Ответ 4"  
+               "7 bits",
+               "16 bits", 
+               "8 bits",
+               "4 bits"  
+            ],
+            "correct": 1
+          },
+          {
+            "text": "Choose the appropriate data type for this value: A",
+            "answers": [
+               "char",
+               "double", 
+               "string",
+               "int"  
             ],
             "correct": 0
+          },
+          {
+            "text": "Which of the following operators are used to compare values in Java?",
+            "answers": [
+               "==",
+               "===", 
+               "!=",
+               "<>"  
+            ],
+            "correct": [0, 2, 3]
+          },
+          {
+            "text": "Which method is used to create an object in Java?",
+            "answers": [
+               "construct()",
+               " instantiate()", 
+               "new()",
+               "create()"  
+            ],
+            "correct": 2
           }
         ]
       },
       {
         "name": "Python",
+        "backgroundImage": "./img/python.svg",
         "questions": [
           {
-            "text": "Вопрос 1 по Python?",
+            "text": "How to get the length of a string in Python?",
             "answers": [
-               "Ответ 1",
-               "Ответ 2", 
-               "Ответ 3", 
-               "Ответ 4"
+               "len()",
+               "length()", 
+               "size()", 
+               "getSize()"
             ],
             "correct": 0
           },
           {
-            "text": "Вопрос 2 по Python?",
+            "text": "How to create an empty list in Python?",
             "answers": [
-               "Ответ 1",
-               "Ответ 2", 
-               "Ответ 3",
-               "Ответ 4" 
+               "[0]",
+               "list()", 
+               "[]", 
+               "{}"
+            ],
+            "correct": [1, 2]
+          },
+          {
+            "text": "What operator is used for assignment in Python?",
+            "answers": [
+               ":=",
+               "==", 
+               "<-", 
+               "="
+            ],
+            "correct": 3
+          },
+          {
+            "text": "What data type is used to store a text string in Python?",
+            "answers": [
+               "txt",
+               "str", 
+               "string", 
+               "text"
             ],
             "correct": 1
+          },
+          {
+            "text": "What keyword is used to declare a function in Python?",
+            "answers": [
+               "function",
+               "func ", 
+               "def",
+               "declare" 
+            ],
+            "correct": 2
           }
         ]
       }

@@ -41,10 +41,10 @@ html, body {
     border-bottom-right-radius: 18px;
 }
 
-.change-background::before {
+/* .change-background::before {
     background: url('../img/c.svg') no-repeat center;
     background-size: cover;
-  }
+  } */
 
 .content {
     margin-top: 38vh;
