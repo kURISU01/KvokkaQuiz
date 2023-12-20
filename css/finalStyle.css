@@ -1,20 +1,17 @@
+
 .FinalPage {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    justify-content: center;
-    margin-bottom: 10vh;
-    padding-bottom: 10%;
+    width: 100%;
+    height: 100%;
+
 }
 
 .FinalPage::before {
     content: '';
-    background: url(/img/finalBack.svg);
-    background-size: contain;
-    width: 100vw;
-    height: 100vh;
+    background: url(/img/finalBack.svg) no-repeat;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     position: absolute;
@@ -23,8 +20,17 @@
 .man {
     position: absolute;
     bottom: 0;
-    margin-left: 15%;
+    margin-left: 55px;
 
+}
+
+.textScore {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .FinalPage span {
@@ -44,7 +50,7 @@
 
     text-align: center;
     font-family: Poppins;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -53,7 +59,7 @@
 
     text-align: center;
     font-family: Poppins;
-    font-size: 45px;
+    font-size: 55px;
     font-weight: 500;
 }
 

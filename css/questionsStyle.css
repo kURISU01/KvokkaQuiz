@@ -1,17 +1,7 @@
-html,
-body {
-    height: 100%;
-    overflow: hidden;
-}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Poppins;
-}
 
 .container {
+    height: 100%;
     max-height: 100vh;
     position: relative;
 }
@@ -20,7 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
+
+    height: 100%;
 }
 
 .QuestionPage::before {
@@ -40,10 +31,12 @@ body {
 }
 
 .change-background::before {
-    background: url('./img/c.svg') no-repeat;
+    content: '';
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    height: 52vh;
+    background-color: #A76AE4;
+    
 }
 
 .contentPageQ {
@@ -93,7 +86,7 @@ body {
     color: #5B1CAE;
     text-align: center;
     font-family: Poppins;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     padding: 17px 0px 17px 0px;
     border: none;
@@ -102,6 +95,18 @@ body {
     box-shadow: 0px 2px 13px 4px rgba(157, 87, 227, 0.25);
     margin-bottom: 16px;
     width: 100%;
+}
+
+.moreThanOne {
+    position: absolute;
+    margin-top: 35%;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFF;
+    display: none;
+
 }
 
 .answer span {
@@ -143,7 +148,6 @@ body {
 }
 
 .NextBtn {
-    position: absolute;
     border: none;
     width: 196px;
     height: 64px;
@@ -151,8 +155,9 @@ body {
     border-radius: 50px;
     background: #A76AE4;
     box-shadow: 0px 2px 13px 4px rgba(157, 87, 227, 0.25);
-    margin-top: 58vh;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+
 }
 
 

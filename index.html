@@ -43,25 +43,26 @@
                 <div class="Qtext">Question
                     <div class="Question"></div>
                 </div>
-                <button class="answer A">
+                <div class="moreThanOne">*more than one answer</div>
+                <button class="answer A" onclick="kekboks(this)">
                     <div class="answerContainerA">
                         <span class="numberA">A</span>
                         <p class="textAnswerA"></p>
                     </div>
                 </button>
-                <button class="answer B">
+                <button class="answer B" onclick="kekboks(this)">
                     <div class="answerContainerB">
                         <span class="numberB">B</span>
                         <p class="textAnswerB"></p>
                     </div>
                 </button>
-                <button class="answer C">
+                <button class="answer C" onclick="kekboks(this)">
                     <div class="answerContainerC">
                         <span class="numberC">C</span>
                         <p class="textAnswerC"></p>
                     </div>
                 </button>
-                <button class="answer D">
+                <button class="answer D" onclick="kekboks(this)">
                     <div class="answerContainerD">
                         <span class="numberD">D</span>
                         <p class="textAnswerD"></p>
@@ -74,10 +75,13 @@
 
         </div>
         <div class="FinalPage hided">
+            <div class="textScore">
             <span class="Result">Congrats!</span>
             <span class="yourScore">YOUR SCORE</span>
-            <span class="Score">10/10</span>
+            <span id="spanScore" class="Score"></span>
+        </div>
             <img class="man" src="/img/completed.png"></img>
+        
 
         </div>
     </div>
